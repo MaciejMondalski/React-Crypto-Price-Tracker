@@ -5,7 +5,9 @@ const CoinList = ({ name, image, symbol, price, volume, priceChange, marketcap }
     <CoinContainer>
       <div className="coin-row">
         <div className="coin">
-          <img src={image} alt="crypto" />
+          <div className="image">
+            <img src={image} alt="crypto" />
+          </div>
           <h1>{name}</h1>
           <p className="coin-symbol">{symbol}</p>
         </div>
@@ -48,17 +50,25 @@ const CoinContainer = styled.div`
     display: flex;
     align-items: center;
     min-width: 30rem;
-    &:hover {
-    }
+    text-align: start;
 
     h1 {
+      flex: 2;
       font-size: 1.2rem;
       width: 50%;
     }
 
-    img {
-      height: 2rem;
-      width: 2rem;
+    .image {
+      flex: 1;
+      img {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+
+    .coin-symbol {
+      text-transform: uppercase;
+      flex: 2;
     }
   }
 
@@ -66,19 +76,25 @@ const CoinContainer = styled.div`
     flex: 4;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    text-align: start;
     width: 100%;
     min-width: 30rem;
   }
 
-  .coin-symbol {
-    text-transform: uppercase;
+  .coin-price {
+    flex: 3;
+  }
+
+  .coin-percent {
+    flex: 2;
   }
 
   .coin-volume {
+    flex: 4;
   }
 
   .coin-marketcap {
+    flex: 5;
   }
 
   .red {
