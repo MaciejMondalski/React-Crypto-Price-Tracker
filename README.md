@@ -1,3 +1,10 @@
+Check it out!
+https://lucid-mestorf-082eaf.netlify.app
+
+<p align="center">
+  <img src="./crypto_pic.png" width="1400" title="hover text">
+</p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
